@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Note App</title>
+  </head>
+  <body>
+    <h1>Note App</h1>
+    <p>
+      {% if note is not none %}
+        {{ note }}
+      {% else %}
+        There is no saved note.
+      {% endif %}
+    </p>
+    <p><small>Edited {{ edit_count }} times.</small></p>
+    <p><a href="/note">Click here to modify the current note!</a></p>
+  </body>
+</html>
